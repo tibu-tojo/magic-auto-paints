@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ContactSection } from "@/components/features/ContactSection";
+import { GallerySection } from "@/components/features/GallerySection";
+import { PriceListSection } from "@/components/features/PriceListSection";
 import { business, services } from "@/lib/site";
 
 const trustItems = [
@@ -14,7 +17,7 @@ const trustItems = [
 export default function HomePage() {
   return (
     <>
-      <section className="grain relative flex min-h-[760px] items-end overflow-hidden border-b border-white/10 pt-28 lg:min-h-screen">
+      <section id="home" className="grain relative flex min-h-[760px] items-end overflow-hidden border-b border-white/10 pt-28 lg:min-h-screen">
         <Image src="/images/home/bodyshop.jpg" alt="Vehicle professionally masked and prepared for refinishing" fill priority sizes="100vw" className="object-cover object-center opacity-55" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,5,.98)_0%,rgba(5,5,5,.78)_45%,rgba(5,5,5,.3)_100%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(0deg,#080808_0%,transparent_45%)]" />
@@ -25,8 +28,8 @@ export default function HomePage() {
           <div className="mt-8 flex max-w-2xl flex-col gap-7 lg:flex-row lg:items-end lg:justify-between">
             <p className="max-w-xl text-base leading-7 text-white/65 sm:text-lg">Precision bodywork, SMART repairs, alloy refurbishment and one-off finishes—restoring every line, reflection and detail.</p>
             <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col">
-              <Link href="/contact" className="button button-primary">Get a free quote <ArrowRight size={17}/></Link>
-              <Link href="/gallery" className="button button-secondary">View our work</Link>
+              <Link href="/#contact" className="button button-primary">Get a free quote <ArrowRight size={17}/></Link>
+              <Link href="/#gallery" className="button button-secondary">View our work</Link>
             </div>
           </div>
         </div>
@@ -55,17 +58,21 @@ export default function HomePage() {
 
       <section className="section border-y border-white/10 bg-[#0b0b0b]">
         <div className="shell">
-          <div className="reveal flex flex-col justify-between gap-6 lg:flex-row lg:items-end"><SectionHeading eyebrow="What we do" title="Repairs that hold up under the light." description="From everyday damage to distinctive custom work, the right process creates a finish that looks effortless."/><Link href="/price-list" className="button button-secondary">Explore prices <ArrowRight size={17}/></Link></div>
+          <div className="reveal flex flex-col justify-between gap-6 lg:flex-row lg:items-end"><SectionHeading eyebrow="What we do" title="Repairs that hold up under the light." description="From everyday damage to distinctive custom work, the right process creates a finish that looks effortless."/><Link href="/#price-list" className="button button-secondary">Explore prices <ArrowRight size={17}/></Link></div>
           <div className="mt-12 grid gap-5 lg:grid-cols-3">{services.map((service,index)=><article key={service.title} className="surface reveal group overflow-hidden" style={{"--delay":`${index*100}ms`} as React.CSSProperties}><div className="relative aspect-[4/3] overflow-hidden"><Image src={service.image} alt={service.title} fill sizes="(max-width:1024px) 100vw,33vw" className="object-cover transition duration-700 group-hover:scale-105"/><span className="absolute left-5 top-5 grid h-12 w-12 place-items-center bg-black/80 text-xs font-bold text-orange-400">0{index+1}</span></div><div className="p-7"><h3 className="display-title text-3xl">{service.title}</h3><p className="mt-4 text-sm leading-7 text-white/55">{service.description}</p></div></article>)}</div>
         </div>
       </section>
 
+      <PriceListSection />
+      <GallerySection />
+
       <section className="section overflow-hidden">
         <div className="shell grid gap-12 lg:grid-cols-[1fr_.82fr] lg:items-center">
-          <div className="reveal"><SectionHeading eyebrow="Free quotations" title="Show us the damage. We’ll map the repair."/><p className="mt-6 max-w-2xl text-lg leading-8 text-white/60">Email photos or videos for an initial quotation, visit the workshop, or arrange a convenient local assessment. We can also discuss collection and return within the local area.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="/contact" className="button button-primary">Request your quote <ArrowRight size={17}/></Link><a href={`tel:${business.officeHref}`} className="button button-secondary">Call {business.officeDisplay}</a></div></div>
+          <div className="reveal"><SectionHeading eyebrow="Free quotations" title="Show us the damage. We’ll map the repair."/><p className="mt-6 max-w-2xl text-lg leading-8 text-white/60">Email photos or videos for an initial quotation, visit the workshop, or arrange a convenient local assessment. We can also discuss collection and return within the local area.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="/#contact" className="button button-primary">Request your quote <ArrowRight size={17}/></Link><a href={`tel:${business.officeHref}`} className="button button-secondary">Call {business.officeDisplay}</a></div></div>
           <div className="relative reveal"><div className="paint-orb left-10 top-10"/><div className="surface relative grid grid-cols-2 gap-px overflow-hidden bg-white/10"><div className="bg-[#111] p-7"><Paintbrush className="text-orange-500"/><p className="display-title mt-12 text-4xl">Paint</p><p className="mt-2 text-xs uppercase tracking-widest text-white/35">Matched precisely</p></div><div className="bg-[#111] p-7"><Gauge className="text-orange-500"/><p className="display-title mt-12 text-4xl">Repair</p><p className="mt-2 text-xs uppercase tracking-widest text-white/35">Planned clearly</p></div></div></div>
         </div>
       </section>
+      <ContactSection />
     </>
   );
 }

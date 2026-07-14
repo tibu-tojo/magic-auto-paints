@@ -6,7 +6,7 @@ Build a polished, responsive automotive paint and body-repair website named **Ma
 
 ## Scope
 
-The deliverable is a new standalone project at `/Users/aswin/Desktop/Office Project/magic-auto-paint` using Next.js App Router, strict TypeScript, and Tailwind CSS. It contains four public pages: Home, Price List, Gallery, and Contact, plus Privacy Policy and Cookie Policy pages. It does not include authentication, a CMS, payments, appointment scheduling, analytics, or an admin panel.
+The deliverable is a new standalone project at `/Users/aswin/Desktop/Office Project/magic-auto-paint` using Next.js App Router, strict TypeScript, and Tailwind CSS. Home, Price List, Gallery, and Contact are anchored sections of one continuous page. Privacy Policy and Cookie Policy remain dedicated legal pages. Legacy content URLs redirect to their matching home-page sections. It does not include authentication, a CMS, payments, appointment scheduling, analytics, or an admin panel.
 
 The expired 2025 holiday closure and temporary-hours notices from the reference site will not be reproduced. Business contact data will otherwise remain aligned with the reference site unless the user replaces it later:
 

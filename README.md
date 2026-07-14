@@ -23,11 +23,13 @@ npm run build
 
 Copy `.env.example` to `.env.local` and configure the Resend values to enable online form delivery. Without email configuration, the form safely displays the direct email fallback.
 
-## Main routes
+## Main sections
 
-- `/`
-- `/price-list`
-- `/gallery`
-- `/contact`
+- `/#home`
+- `/#price-list`
+- `/#gallery`
+- `/#contact`
 - `/privacy-policy`
 - `/cookie-policy`
+
+The legacy `/price-list`, `/gallery`, and `/contact` URLs redirect to their corresponding section on the home page.

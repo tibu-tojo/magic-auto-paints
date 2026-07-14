@@ -21,7 +21,7 @@ export function SiteFooter() {
           <p className="mt-6 max-w-md text-sm leading-7 text-white/50">
             Automotive paint, body repairs, wheel refurbishment and custom finishes, completed with precision in Dorking, Surrey.
           </p>
-          <Link href="/contact" className="mt-7 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[.16em] text-orange-400">
+          <Link href="/#contact" className="mt-7 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[.16em] text-orange-400">
             Request a quote <ArrowUpRight size={16} />
           </Link>
         </div>

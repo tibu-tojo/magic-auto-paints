@@ -1,11 +1,2 @@
-import type { Metadata } from "next";
-import { Mail, MapPin, Phone } from "lucide-react";
-
-import { ConsentMap } from "@/components/contact/ConsentMap";
-import { ContactForm } from "@/components/contact/ContactForm";
-import { PageHero } from "@/components/ui/PageHero";
-import { business } from "@/lib/site";
-
-export const metadata: Metadata = { title: "Contact", description: "Request a free automotive paint or body repair quotation from Magic Auto Paint in Dorking, Surrey." };
-
-export default function ContactPage(){return <><PageHero eyebrow="Start with a conversation" title="Tell us what needs attention." description="Send a few details and, if helpful, email photos or video. We’ll explain the next step and arrange a free quotation."/><section className="section"><div className="shell grid gap-10 lg:grid-cols-[1.15fr_.85fr]"><div className="reveal"><ContactForm/></div><aside className="reveal space-y-5" style={{"--delay":"100ms"} as React.CSSProperties}><div className="surface p-7"><p className="eyebrow">Speak to us</p><div className="mt-5 grid gap-4"><a className="contact-link text-lg" href={`tel:${business.officeHref}`}><Phone className="text-orange-500"/> {business.officeDisplay}</a><a className="contact-link text-lg" href={`tel:${business.mobileHref}`}><Phone className="text-orange-500"/> {business.mobileDisplay}</a><a className="contact-link break-all" href={`mailto:${business.email}`}><Mail className="text-orange-500"/> {business.email}</a></div></div><div className="surface p-7"><p className="eyebrow">Workshop</p><div className="flex items-start gap-4"><MapPin className="mt-1 shrink-0 text-orange-500"/><address className="not-italic leading-7 text-white/60"><strong className="text-white">Magic Auto Paint</strong><br/>{business.addressLines.map(line=><span key={line}>{line}<br/></span>)}</address></div><p className="mt-5 text-sm leading-6 text-white/45">At Dorking West Station Yard, drive past LJC Auto Spares and follow the road for approximately 250 yards.</p></div></aside></div></section><section className="border-y border-white/10"><div className="shell py-12"><p className="eyebrow">How to find us</p><h2 className="display-title mb-8 text-4xl sm:text-5xl">Dorking, Surrey</h2><div className="surface overflow-hidden"><ConsentMap/></div></div></section></>}
+import { redirect } from "next/navigation";
+export default function ContactPage(): never { redirect("/#contact"); }

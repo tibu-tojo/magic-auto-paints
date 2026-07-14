@@ -18,10 +18,10 @@ export interface PriceItem {
 export const SITE_NAME = "Magic Auto Paint";
 
 export const navigation: NavigationItem[] = [
-  { href: "/", label: "Home" },
-  { href: "/price-list", label: "Price list" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#price-list", label: "Price list" },
+  { href: "/#gallery", label: "Gallery" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export const business = {

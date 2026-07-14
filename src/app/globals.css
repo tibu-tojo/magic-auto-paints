@@ -4,6 +4,7 @@
 @theme inline { --font-sans:var(--font-body); --font-display:var(--font-display); --color-orange-500:var(--orange); }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; background:var(--ink); }
+section[id] { scroll-margin-top:6rem; }
 body { margin:0; background:var(--ink); color:var(--cream); font-family:var(--font-body),sans-serif; overflow-x:hidden; }
 ::selection { background:var(--orange); color:#080808; }
 a,button,input,textarea { outline-offset:4px; }

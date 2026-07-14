@@ -3,13 +3,11 @@
 import { ArrowUpRight, Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { business, navigation } from "@/lib/site";
 
 export function SiteHeader() {
-  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -35,13 +33,11 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
           {navigation.map((item) => {
-            const isActive = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`nav-link ${isActive ? "nav-link-active" : ""}`}
-                aria-current={isActive ? "page" : undefined}
+                className="nav-link"
               >
                 {item.label}
               </Link>
@@ -53,7 +49,7 @@ export function SiteHeader() {
           <a className="icon-button" href={`tel:${business.officeHref}`} aria-label={`Call ${business.officeDisplay}`}>
             <Phone size={18} />
           </a>
-          <Link href="/contact" className="button button-primary">
+          <Link href="/#contact" className="button button-primary">
             Get a free quote <ArrowUpRight size={17} />
           </Link>
         </div>
@@ -90,7 +86,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="mt-8 grid gap-3">
-          <Link href="/contact" className="button button-primary justify-center" onClick={() => setIsOpen(false)}>
+          <Link href="/#contact" className="button button-primary justify-center" onClick={() => setIsOpen(false)}>
             Get a free quote <ArrowUpRight size={17} />
           </Link>
           <a href={`tel:${business.officeHref}`} className="button button-secondary justify-center">
