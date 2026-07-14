@@ -42,46 +42,46 @@ export const business = {
 
 export const services: Service[] = [
   {
-    title: "Bodyshop & SMART repairs",
+    title: "Bodyshop And SMART Repairs",
     description:
-      "We handle jobs of almost every size, from a mirror cover or bumper corner to dent repairs and full resprays. Send us the damage details for a free, no-obligation quotation.",
+      "We are able to handle most size jobs from a mirror cover and bumper corner to full re-sprays. Whether you have a scrape or a dent, let us know and we can give you a free no obligation quotation.",
     image: "/images/home/bodyshop.jpg",
   },
   {
-    title: "Alloy wheel refurbishment",
+    title: "Alloy Wheel Refurbishments",
     description:
-      "Existing wheels can be repaired in-house for scuffs, scratches and other damage. We also offer custom colours, two-tone finishes and brake-calliper colour changes.",
+      "Whether it is repairing your existing wheels from minor scrapes and scratches or repairs, this can be done in house. Custom jobs can also be taken on from changing the colour of the wheels to black, two tone etc and we can also change the colour of your brake callipers.",
     image: "/images/home/alloy-wheel.jpg",
   },
   {
-    title: "Custom paintwork",
+    title: "Customs",
     description:
-      "We work with customers to realise custom colours, body kits, wheels and unusual specialist pieces—including exhibition and trade-show work such as the pink display tank.",
+      "Here at Magic Auto Paint Ltd we like to work with our customers to make your vision come true which can include custom paint colours, body kits, custom wheels and more. It does not just have to be a car or a van; we can take other custom work such as work for exhibitions and trade shows, including the pink tank completed for a recent art exhibition.",
     image: "/images/home/custom-paint.jpg",
   },
 ];
 
 export const prices: PriceItem[] = [
-  { service: "Bumper corner", price: "From £150", group: "Paintwork" },
-  { service: "Front or rear bumper", price: "From £250", group: "Paintwork" },
-  { service: "Front wing", price: "From £150", group: "Paintwork" },
-  { service: "Quarter panel", price: "From £200", group: "Paintwork" },
+  { service: "Bumper Corner", price: "From £150", group: "Paintwork" },
+  { service: "Front or Rear Bumper", price: "From £250", group: "Paintwork" },
+  { service: "Front Wing", price: "From £150", group: "Paintwork" },
+  { service: "Quarter Panel", price: "From £200", group: "Paintwork" },
   { service: "Door", price: "From £200", group: "Paintwork" },
   { service: "Bonnet", price: "From £250", group: "Paintwork" },
   { service: "Tailgate", price: "From £200", group: "Paintwork" },
   { service: "Roof", price: "From £250", group: "Paintwork" },
-  { service: "Mirror cover", price: "From £70", group: "Paintwork" },
-  { service: "Sill panel", price: "From £120", group: "Paintwork" },
-  { service: "Alloy wheel", price: "From £75 / wheel", group: "Wheels & finish" },
-  { service: "Brake calliper", price: "From £25 / calliper", group: "Wheels & finish" },
-  { service: "Full mop / polish", price: "From £150", group: "Wheels & finish" },
+  { service: "Mirror Cover", price: "From £70", group: "Paintwork" },
+  { service: "Alloy Wheels", price: "From £75 per wheel", group: "Wheels & finish" },
+  { service: "Brake Callipers", price: "From £25 per calliper", group: "Wheels & finish" },
+  { service: "Sill Panel", price: "From £120", group: "Paintwork" },
+  { service: "Full Mop / Polish", price: "From £150", group: "Wheels & finish" },
   {
-    service: "Paint protection + full polish",
+    service: "Paint Protection Application Including Full Polish",
     price: "From £200",
     group: "Wheels & finish",
   },
-  { service: "Bodywork repairs", price: "From £50 / hour", group: "Bodywork & custom" },
-  { service: "Custom job / paint", price: "Available on request", group: "Bodywork & custom" },
+  { service: "Body Work Repairs", price: "From £50 per hour", group: "Bodywork & custom" },
+  { service: "Custom Job / Paint", price: "Available on request", group: "Bodywork & custom" },
 ];
 
 export const cookiePreferenceKey = "magic-auto-paint-consent-v1";

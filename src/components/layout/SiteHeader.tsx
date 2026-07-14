@@ -50,7 +50,7 @@ export function SiteHeader() {
             <Phone size={18} />
           </a>
           <Link href="/#contact" className="button button-primary">
-            Get a free quote <ArrowUpRight size={17} />
+            Contact us <ArrowUpRight size={17} />
           </Link>
         </div>
 
@@ -87,7 +87,7 @@ export function SiteHeader() {
         </nav>
         <div className="mt-8 grid gap-3">
           <Link href="/#contact" className="button button-primary justify-center" onClick={() => setIsOpen(false)}>
-            Get a free quote <ArrowUpRight size={17} />
+            Contact us <ArrowUpRight size={17} />
           </Link>
           <a href={`tel:${business.officeHref}`} className="button button-secondary justify-center">
             <Phone size={17} /> {business.officeDisplay}
