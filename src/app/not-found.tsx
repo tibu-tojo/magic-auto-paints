@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <section className="shell grid min-h-[80vh] place-items-center pt-28 text-center"><div><p className="display-title text-[9rem] text-orange-500">404</p><h1 className="display-title text-4xl">That road ends here.</h1><p className="mt-4 text-white/50">The page you requested could not be found.</p><Link href="/" className="button button-primary mt-8">Back home</Link></div></section>}
