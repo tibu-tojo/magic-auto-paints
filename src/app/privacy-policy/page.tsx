@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/ui/PageHero";
-import { business } from "@/lib/site";
 
-export const metadata: Metadata = { title:"Privacy Policy" };
-export default function PrivacyPolicyPage(){return <><PageHero eyebrow="Legal" title="Privacy policy" description="How Magic Auto Paint handles information you choose to send through this website."/><article className="shell section max-w-4xl space-y-8 text-sm leading-7 text-white/60"><section><h2 className="display-title text-3xl text-white">Information we collect</h2><p className="mt-3">When you submit the contact form, we receive your name, email, optional phone number, message and consent confirmation. We use these details only to answer your enquiry, prepare a quotation and arrange requested work.</p></section><section><h2 className="display-title text-3xl text-white">How it is handled</h2><p className="mt-3">Contact details are sent to the business email account and retained only as long as reasonably needed for the enquiry, service records and applicable legal obligations. We do not sell contact information or use it for unrelated marketing.</p></section><section><h2 className="display-title text-3xl text-white">Your choices</h2><p className="mt-3">You may ask what personal information we hold, request a correction, or ask for deletion where no legal reason requires retention. Contact <a className="text-orange-400" href={`mailto:${business.email}`}>{business.email}</a>.</p></section><section><h2 className="display-title text-3xl text-white">External services</h2><p className="mt-3">Google Maps loads only with consent. Email delivery may be handled by a configured email provider acting as a processor. Their processing is subject to their service terms and privacy controls.</p></section><p className="border-l-2 border-orange-500 pl-5 text-white/40">This page is a practical website privacy summary and should be reviewed by a qualified adviser before production launch.</p></article></>}
+import { PageHero } from "@/components/ui/PageHero";
+
+export const metadata: Metadata = { title: "Privacy Policy" };
+
+export default function PrivacyPolicyPage() {
+  return <>
+    <PageHero eyebrow="Legal" title="Privacy Policy" description="How Magic Auto Paint Ltd protects and uses the personal data provided to us." />
+    <article className="shell section max-w-4xl space-y-10 text-base leading-8 text-white/60">
+      <section>
+        <h2 className="display-title text-3xl text-white sm:text-4xl">Collected Personal Data</h2>
+        <p className="mt-5 italic">Here at Magic Auto Paint Ltd, we care for your privacy. That is why we have taken appropriate measures to ensure that the data you have provided to us is always secure. If you have any questions related to GDPR compliance or data protection, please contact our Data Protection Officer.</p>
+      </section>
+      <section>
+        <h2 className="display-title text-3xl text-white sm:text-4xl">Purpose of collecting data</h2>
+        <p className="mt-5 italic">The data we collect is only taken in order to process your quotation, enquiry or invoice. Only essential data will be collected for the purpose of the job and no further information is collected. The data collected is not used for any marketing purposes or sold to any third parties.</p>
+      </section>
+    </article>
+  </>;
+}
