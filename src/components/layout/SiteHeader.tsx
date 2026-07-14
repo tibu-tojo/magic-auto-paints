@@ -22,10 +22,10 @@ export function SiteHeader() {
       <div className="shell flex h-24 items-center justify-between gap-6">
         <Link href="/" className="relative z-50 block shrink-0" aria-label="Magic Auto Paint home">
           <Image
-            src="/brand/magic-auto-paint-logo.jpeg"
+            src="/brand/magic-auto-paint-logo-transparent.png"
             alt="Magic Auto Paint"
-            width={1024}
-            height={500}
+            width={1792}
+            height={878}
             priority
             className="h-auto w-40 object-contain sm:w-48"
           />
@@ -68,7 +68,7 @@ export function SiteHeader() {
 
       <div
         id="mobile-navigation"
-        className={`fixed inset-0 z-40 bg-[#090909] px-6 pt-32 transition-all duration-500 lg:hidden ${
+        className={`fixed inset-0 z-40 min-h-[100dvh] bg-black px-6 pt-32 transition-all duration-500 lg:hidden ${
           isOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-4 opacity-0"
         }`}
       >
