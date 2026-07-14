@@ -12,7 +12,7 @@ export default function HomePage() {
       <Image src="/images/home/bodyshop.jpg" alt="Automotive paintwork in progress" fill priority sizes="100vw" className="object-cover opacity-45" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,5,5,.98),rgba(5,5,5,.56)),linear-gradient(0deg,#080808,transparent_65%)]" />
       <div className="shell relative z-10 pb-16 pt-24 lg:pb-24">
-        <Image src="/brand/magic-auto-paint-logo.jpeg" alt="Magic Auto Paint logo" width={1024} height={500} priority className="mb-8 h-auto w-52 sm:w-72" />
+        <Image src="/brand/magic-auto-paint-logo.jpeg" alt="Magic Auto Paint logo" width={1024} height={500} priority className="mb-8 h-auto w-52 mix-blend-screen sm:w-72" />
         <h1 className="display-title max-w-5xl text-[clamp(3.3rem,8vw,8rem)]">Welcome to<br/><span className="text-orange-500">Magic Auto Paint</span></h1>
         <div className="paint-line mt-7 max-w-3xl" />
         <Link href="/#contact" className="button button-primary mt-8">Contact us</Link>
