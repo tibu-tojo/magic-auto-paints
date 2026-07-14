@@ -31,7 +31,7 @@ export default function HomePage() {
         <div className="reveal relative min-h-[480px]"><div className="absolute inset-0 overflow-hidden [clip-path:polygon(0_0,100%_7%,92%_100%,0_93%)]"><Image src="/images/home/workshop-detail.jpg" alt="Automotive professionals completing paintwork" fill sizes="(max-width:1024px) 100vw,45vw" className="object-cover"/></div></div>
         <div className="reveal">
           <p className="eyebrow">About us</p>
-          <h2 className="display-title text-4xl sm:text-6xl">Highly qualified and motivated automotive professionals based in Dorking, Surrey!</h2>
+          <h2 className="display-title text-3xl sm:text-5xl">Highly qualified and motivated automotive professionals based in Dorking, Surrey!</h2>
           <p className="mt-7 text-lg leading-8 text-white/60">Magic Auto Paint Ltd was established in 2020 and was started by Maciej Szpala who is an ATA qualified paint sprayer whose passion comes from restoring a car or van back to its former glory. Magic Auto Paint has a team with a highly qualified mechanic, a panel beater and paint sprayer so any job from alloy wheels, SMART repairs and bodyshop work can be taken on including custom jobs. A quality finish is paramount to the company, teamed with excellent customer service.</p>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function HomePage() {
       <div className="shell">
         <div className="reveal">
           <p className="eyebrow">Services Available</p>
-          <h2 className="display-title text-4xl sm:text-6xl">Automotive services in Dorking, Surrey and surrounding areas.</h2>
+          <h2 className="display-title text-3xl sm:text-5xl">Automotive services in Dorking, Surrey and surrounding areas.</h2>
           <p className="mt-5 text-lg text-white/60">Call <a className="text-orange-400" href={`tel:${business.officeHref}`}>{business.officeDisplay}</a> or email <a className="text-orange-400" href={`mailto:${business.email}`}>{business.email}</a> for a FREE QUOTATION.</p>
           <p className="mt-3 text-white/50">We are able to help anyone with their automotive needs in Dorking, Surrey and surrounding areas.</p>
         </div>
@@ -51,7 +51,7 @@ export default function HomePage() {
 
     <section className="section">
       <div className="shell grid gap-10 lg:grid-cols-[1fr_.8fr] lg:items-center">
-        <div className="reveal"><p className="eyebrow">Free quotations available</p><h2 className="display-title text-4xl sm:text-6xl">We will aim to accommodate your needs.</h2><p className="mt-6 text-lg leading-8 text-white/60">We can be flexible in turnaround times plus we can even collect your car from your home or place of business and return it on completion within the local area.</p><p className="mt-4 leading-7 text-white/50">For your free quotations please contact me on {business.officeDisplay} or email me at {business.email}.</p><p className="mt-4 leading-7 text-white/50">Please feel free to email over any photos or videos you have to help assist with your quotation or we can arrange a time for you to come to the garage or we can come to you at a convenient time.</p><Link href="/#contact" className="button button-primary mt-8">Contact us</Link></div>
+        <div className="reveal"><p className="eyebrow">Free quotations available</p><h2 className="display-title text-3xl sm:text-5xl">We will aim to accommodate your needs.</h2><p className="mt-6 text-lg leading-8 text-white/60">We can be flexible in turnaround times plus we can even collect your car from your home or place of business and return it on completion within the local area.</p><p className="mt-4 leading-7 text-white/50">For your free quotations please contact me on {business.officeDisplay} or email me at {business.email}.</p><p className="mt-4 leading-7 text-white/50">Please feel free to email over any photos or videos you have to help assist with your quotation or we can arrange a time for you to come to the garage or we can come to you at a convenient time.</p><Link href="/#contact" className="button button-primary mt-8">Contact us</Link></div>
         <div className="reveal relative aspect-square overflow-hidden"><Image src="/images/home/custom-paint.jpg" alt="Custom job completion turning a metal rusted tank to custom pink colour for a business client for an art exhibition" fill sizes="(max-width:1024px) 100vw,40vw" className="object-cover"/></div>
       </div>
     </section>
