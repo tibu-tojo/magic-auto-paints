@@ -44,19 +44,19 @@ export const services: Service[] = [
   {
     title: "Bodyshop & SMART repairs",
     description:
-      "From mirror covers and bumper corners to dents, panel repairs and full resprays, every finish is prepared with care and colour-matched precisely.",
+      "We handle jobs of almost every size, from a mirror cover or bumper corner to dent repairs and full resprays. Send us the damage details for a free, no-obligation quotation.",
     image: "/images/home/bodyshop.jpg",
   },
   {
     title: "Alloy wheel refurbishment",
     description:
-      "Repair scuffs and scratches, refresh tired finishes, or create a custom colour treatment with matching brake callipers completed in-house.",
+      "Existing wheels can be repaired in-house for scuffs, scratches and other damage. We also offer custom colours, two-tone finishes and brake-calliper colour changes.",
     image: "/images/home/alloy-wheel.jpg",
   },
   {
     title: "Custom paintwork",
     description:
-      "Bring a one-off idea to life with custom colours, body kits, wheels and specialist pieces for vehicles, exhibitions and trade shows.",
+      "We work with customers to realise custom colours, body kits, wheels and unusual specialist pieces—including exhibition and trade-show work such as the pink display tank.",
     image: "/images/home/custom-paint.jpg",
   },
 ];
@@ -74,14 +74,14 @@ export const prices: PriceItem[] = [
   { service: "Sill panel", price: "From £120", group: "Paintwork" },
   { service: "Alloy wheel", price: "From £75 / wheel", group: "Wheels & finish" },
   { service: "Brake calliper", price: "From £25 / calliper", group: "Wheels & finish" },
-  { service: "Full machine polish", price: "From £150", group: "Wheels & finish" },
+  { service: "Full mop / polish", price: "From £150", group: "Wheels & finish" },
   {
     service: "Paint protection + full polish",
     price: "From £200",
     group: "Wheels & finish",
   },
   { service: "Bodywork repairs", price: "From £50 / hour", group: "Bodywork & custom" },
-  { service: "Custom job / paint", price: "Price on request", group: "Bodywork & custom" },
+  { service: "Custom job / paint", price: "Available on request", group: "Bodywork & custom" },
 ];
 
 export const cookiePreferenceKey = "magic-auto-paint-consent-v1";

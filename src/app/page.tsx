@@ -41,6 +41,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="border-b border-orange-500/25 bg-orange-500/[.07]">
+        <div className="shell grid gap-3 py-6 md:grid-cols-[auto_1fr] md:items-center md:gap-8">
+          <p className="text-xs font-extrabold uppercase tracking-[.18em] text-orange-400">Temporary operating hours</p>
+          <p className="text-sm leading-6 text-white/60">We are currently working temporary hours while completing a contract. Please email photos for quotations or call to arrange an evening or weekend appointment. Thank you for your understanding and patience.</p>
+        </div>
+      </section>
+
       <section className="section metal-grid">
         <div className="shell grid items-center gap-14 lg:grid-cols-[.92fr_1.08fr]">
           <div className="reveal relative min-h-[480px]">
@@ -49,8 +56,8 @@ export default function HomePage() {
           </div>
           <div className="reveal" style={{"--delay":"100ms"} as React.CSSProperties}>
             <SectionHeading eyebrow="About Magic Auto Paint" title="Built around the quality of the finish." />
-            <p className="mt-7 text-lg leading-8 text-white/65">Founded by ATA-qualified paint sprayer Maciej Szpala, our Dorking workshop brings together paint, panel and mechanical experience to return cars and vans to their former glory.</p>
-            <p className="mt-5 leading-7 text-white/50">From a bumper scuff to full bodyshop work, alloy wheels or an exhibition piece, every job receives careful preparation, honest communication and uncompromising attention to detail.</p>
+            <p className="mt-7 text-lg leading-8 text-white/65">Magic Auto Paint was established in 2020 by Maciej Szpala, an ATA-qualified paint sprayer whose passion is restoring cars and vans to their former glory.</p>
+            <p className="mt-5 leading-7 text-white/50">Our Dorking team includes mechanical, panel-beating and paint expertise, allowing us to take on alloy wheels, SMART repairs, bodyshop work and custom projects. A quality finish and excellent customer service remain central to every job.</p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">{["Accurate colour matching","Panel & dent repairs","Flexible turnaround","Local collection available"].map(item=><p key={item} className="flex items-center gap-3 text-sm text-white/75"><CheckCircle2 size={17} className="text-orange-500"/>{item}</p>)}</div>
           </div>
         </div>
@@ -68,7 +75,7 @@ export default function HomePage() {
 
       <section className="section overflow-hidden">
         <div className="shell grid gap-12 lg:grid-cols-[1fr_.82fr] lg:items-center">
-          <div className="reveal"><SectionHeading eyebrow="Free quotations" title="Show us the damage. We’ll map the repair."/><p className="mt-6 max-w-2xl text-lg leading-8 text-white/60">Email photos or videos for an initial quotation, visit the workshop, or arrange a convenient local assessment. We can also discuss collection and return within the local area.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="/#contact" className="button button-primary">Request your quote <ArrowRight size={17}/></Link><a href={`tel:${business.officeHref}`} className="button button-secondary">Call {business.officeDisplay}</a></div></div>
+          <div className="reveal"><SectionHeading eyebrow="Free quotations available" title="Show us the damage. We’ll map the repair."/><p className="mt-6 max-w-2xl text-lg leading-8 text-white/60">We aim to accommodate different needs with flexible turnaround times. Within the local area, collection from your home or workplace and return after completion may also be arranged.</p><p className="mt-4 max-w-2xl leading-7 text-white/50">Email photos or videos to help with the quotation, visit the garage at an arranged time, or ask about a convenient local assessment.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="/#contact" className="button button-primary">Request your quote <ArrowRight size={17}/></Link><a href={`tel:${business.officeHref}`} className="button button-secondary">Call {business.officeDisplay}</a></div></div>
           <div className="relative reveal"><div className="paint-orb left-10 top-10"/><div className="surface relative grid grid-cols-2 gap-px overflow-hidden bg-white/10"><div className="bg-[#111] p-7"><Paintbrush className="text-orange-500"/><p className="display-title mt-12 text-4xl">Paint</p><p className="mt-2 text-xs uppercase tracking-widest text-white/35">Matched precisely</p></div><div className="bg-[#111] p-7"><Gauge className="text-orange-500"/><p className="display-title mt-12 text-4xl">Repair</p><p className="mt-2 text-xs uppercase tracking-widest text-white/35">Planned clearly</p></div></div></div>
         </div>
       </section>
