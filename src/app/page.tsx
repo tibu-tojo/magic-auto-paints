@@ -19,13 +19,6 @@ export default function HomePage() {
       </div>
     </section>
 
-    <section className="border-b border-orange-500/25 bg-orange-500/[.07]">
-      <div className="shell py-8">
-        <h2 className="display-title text-3xl">Temporary Operating Hours</h2>
-        <p className="mt-3 max-w-5xl leading-7 text-white/60">Magic Auto Paint Ltd is currently working on temporary hours due to working on a contract throughout April. Please feel free to email photos over for quotations or call to arrange an evening or weekend appointment. We thank you for your understanding and patience.</p>
-      </div>
-    </section>
-
     <section className="section metal-grid">
       <div className="shell grid items-center gap-14 lg:grid-cols-[.9fr_1.1fr]">
         <div className="reveal relative min-h-[480px]"><div className="absolute inset-0 overflow-hidden [clip-path:polygon(0_0,100%_7%,92%_100%,0_93%)]"><Image src="/images/home/workshop-detail.jpg" alt="Automotive professionals completing paintwork" fill sizes="(max-width:1024px) 100vw,45vw" className="object-cover"/></div></div>
