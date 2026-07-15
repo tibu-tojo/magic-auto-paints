@@ -25,7 +25,19 @@ export const metadata: Metadata = {
   title: { default: "Magic Auto Paint | Automotive Paint & Body Repairs", template: "%s | Magic Auto Paint" },
   description: "Premium SMART repairs, bodywork, alloy wheel refurbishment and custom automotive paintwork in Dorking, Surrey.",
   keywords: ["car body repairs Dorking", "SMART repairs Surrey", "alloy wheel refurbishment", "custom car paint"],
-  openGraph: { title: "Magic Auto Paint", description: "Precision automotive repairs and custom paint in Dorking, Surrey.", type: "website", locale: "en_GB" },
+  openGraph: {
+    title: "Magic Auto Paint",
+    description: "Precision automotive repairs and custom paint in Dorking, Surrey.",
+    type: "website",
+    locale: "en_GB",
+    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "Magic Auto Paint logo" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Magic Auto Paint",
+    description: "Precision automotive repairs and custom paint in Dorking, Surrey.",
+    images: ["/twitter-image.png"],
+  },
 };
 
 export const viewport: Viewport = { themeColor: "#080808", colorScheme: "dark" };
