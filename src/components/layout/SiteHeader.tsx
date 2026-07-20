@@ -20,10 +20,10 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#090909]/85 backdrop-blur-xl">
       <div className="shell flex h-24 items-center justify-between gap-6">
-        <Link href="/" className="relative z-50 block shrink-0" aria-label="Magic Auto Paint home">
+        <Link href="/" className="relative z-50 block shrink-0" aria-label="Magic Auto Paints home">
           <Image
             src="/brand/magic-auto-paint-logo-transparent.png"
-            alt="Magic Auto Paint"
+            alt="Magic Auto Paints"
             width={1792}
             height={878}
             priority
@@ -46,7 +46,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a className="icon-button" href={`tel:${business.officeHref}`} aria-label={`Call ${business.officeDisplay}`}>
+          <a className="icon-button" href={`tel:${business.contactNumberHref}`} aria-label={`Call ${business.contactNumberDisplay}`}>
             <Phone size={18} />
           </a>
           <Link href="/#contact" className="button button-primary">
@@ -89,8 +89,8 @@ export function SiteHeader() {
           <Link href="/#contact" className="button button-primary justify-center" onClick={() => setIsOpen(false)}>
             Contact us <ArrowUpRight size={17} />
           </Link>
-          <a href={`tel:${business.officeHref}`} className="button button-secondary justify-center">
-            <Phone size={17} /> {business.officeDisplay}
+          <a href={`tel:${business.contactNumberHref}`} className="button button-secondary justify-center">
+            <Phone size={17} /> {business.contactNumberDisplay}
           </a>
         </div>
       </div>

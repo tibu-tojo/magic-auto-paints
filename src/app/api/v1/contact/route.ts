@@ -34,7 +34,7 @@ export async function POST(request: Request): Promise<NextResponse> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) return NextResponse.json({ message: "Online delivery is not configured yet." }, { status: 503 });
   try {
-    const response = await fetch("https://api.resend.com/emails", { method: "POST", headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" }, body: JSON.stringify({ from: process.env.CONTACT_FROM_EMAIL ?? "Magic Auto Paint <onboarding@resend.dev>", to: [process.env.CONTACT_TO_EMAIL ?? business.email], reply_to: parsed.data.email, subject: `Website quote request from ${parsed.data.name}`, text: `Name: ${parsed.data.name}\nEmail: ${parsed.data.email}\nPhone: ${parsed.data.phone || "Not provided"}\n\n${parsed.data.message}` }) });
+    const response = await fetch("https://api.resend.com/emails", { method: "POST", headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" }, body: JSON.stringify({ from: process.env.CONTACT_FROM_EMAIL ?? "Magic Auto Paints <onboarding@resend.dev>", to: [process.env.CONTACT_TO_EMAIL ?? business.email], reply_to: parsed.data.email, subject: `Website quote request from ${parsed.data.name}`, text: `Name: ${parsed.data.name}\nEmail: ${parsed.data.email}\nPhone: ${parsed.data.phone || "Not provided"}\n\n${parsed.data.message}` }) });
     if (!response.ok) throw new Error("Email provider rejected request");
     return NextResponse.json({ message: "Thank you. Your enquiry has been sent." }, { status: 200 });
   } catch { return NextResponse.json({ message: "Delivery is temporarily unavailable." }, { status: 502 }); }

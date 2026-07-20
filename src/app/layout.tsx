@@ -22,19 +22,19 @@ const hellixDisplay = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: { default: "Magic Auto Paint | Automotive Paint & Body Repairs", template: "%s | Magic Auto Paint" },
+  title: { default: "Magic Auto Paints | Automotive Paint & Body Repairs", template: "%s | Magic Auto Paints" },
   description: "Premium SMART repairs, bodywork, alloy wheel refurbishment and custom automotive paintwork in Dorking, Surrey.",
   keywords: ["car body repairs Dorking", "SMART repairs Surrey", "alloy wheel refurbishment", "custom car paint"],
   openGraph: {
-    title: "Magic Auto Paint",
+    title: "Magic Auto Paints",
     description: "Precision automotive repairs and custom paint in Dorking, Surrey.",
     type: "website",
     locale: "en_GB",
-    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "Magic Auto Paint logo" }],
+    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "Magic Auto Paints logo" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Magic Auto Paint",
+    title: "Magic Auto Paints",
     description: "Precision automotive repairs and custom paint in Dorking, Surrey.",
     images: ["/twitter-image.png"],
   },

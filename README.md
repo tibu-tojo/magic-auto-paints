@@ -1,6 +1,6 @@
-# Magic Auto Paint
+# Magic Auto Paints
 
-Production-ready Next.js App Router website for Magic Auto Paint in Dorking, Surrey.
+Production-ready Next.js App Router website for Magic Auto Paints in Dorking, Surrey.
 
 ## Run locally
 

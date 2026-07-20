@@ -15,7 +15,7 @@ export interface PriceItem {
   group: "Paintwork" | "Wheels & finish" | "Bodywork & custom";
 }
 
-export const SITE_NAME = "Magic Auto Paint";
+export const SITE_NAME = "Magic Auto Paints";
 
 export const navigation: NavigationItem[] = [
   { href: "/#home", label: "Home" },
@@ -25,11 +25,9 @@ export const navigation: NavigationItem[] = [
 ];
 
 export const business = {
-  officeDisplay: "01306 735 678",
-  officeHref: "+441306735678",
-  mobileDisplay: "07979 301 106",
-  mobileHref: "+447979301106",
-  email: "magicpaintshop@hotmail.com",
+  contactNumberDisplay: "07706 208 390",
+  contactNumberHref: "+447706208390",
+  email: "info.magicautopaints@gamil.com",
   addressLines: [
     "Dorking West Station Yard",
     "Ranmore Road",
@@ -56,7 +54,7 @@ export const services: Service[] = [
   {
     title: "Customs",
     description:
-      "Here at Magic Auto Paint Ltd we like to work with our customers to make your vision come true which can include custom paint colours, body kits, custom wheels and more. It does not just have to be a car or a van; we can take other custom work such as work for exhibitions and trade shows, including the pink tank completed for a recent art exhibition.",
+      "Here at Magic Auto Paints Ltd we like to work with our customers to make your vision come true which can include custom paint colours, body kits, custom wheels and more. It does not just have to be a car or a van; we can take other custom work such as work for exhibitions and trade shows, including the pink tank completed for a recent art exhibition.",
     image: "/images/home/custom-paint.jpg",
   },
 ];
