@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { CookieConsent } from "@/components/cookies/CookieConsent";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
+import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { MotionProvider } from "@/components/providers/MotionProvider";
 
 import "./globals.css";
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
+        <WhatsAppButton />
         <CookieConsent />
         <MotionProvider />
       </body>
