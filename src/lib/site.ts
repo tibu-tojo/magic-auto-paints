@@ -27,7 +27,7 @@ export const navigation: NavigationItem[] = [
 export const business = {
   contactNumberDisplay: "07706 208 390",
   contactNumberHref: "+447706208390",
-  email: "info.magicautopaints@gamil.com",
+  email: "info.magicautopaints@gmail.com",
   addressLines: [
     "Dorking West Station Yard",
     "Ranmore Road",
